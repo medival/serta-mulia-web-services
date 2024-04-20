@@ -5,4 +5,4 @@ COPY package.json /app
 RUN npm install
 COPY . .
 CMD ["node", "server/server.js"]
-EXPOSE 8080
+EXPOSE $PORT
